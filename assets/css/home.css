@@ -1,0 +1,339 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body h1, body h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 42px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+header .bar {
+  background-color: #7E33E0;
+  flex: 1 1 100%;
+  display: none;
+}
+header .bar .content {
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 1177px;
+  display: flex;
+}
+header .bar a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+header .bar .info {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+header .bar .setting {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .bar .setting select {
+  background: #7E33E0;
+  color: white;
+  border: none;
+}
+header .bar .setting a {
+  display: block;
+}
+header .menu {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: end;
+  background-color: white;
+  align-items: center;
+  position: relative;
+}
+header .menu > a {
+  margin-right: auto;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  line-height: 40px;
+}
+header .menu form {
+  position: relative;
+  height: 40px;
+}
+header .menu form input {
+  position: absolute;
+  display: none;
+  border: 1px solid #E7E6EF;
+  width: 94vw;
+  padding: 0 25px;
+  right: 45px;
+  height: 40px;
+}
+header .menu form input:focus-visible {
+  outline: rgba(251, 46, 134, 0.2) solid 0.1px;
+}
+header .menu form button {
+  background-color: #FB2E86;
+  border: none;
+  height: 40px;
+  width: 50px;
+  background-image: url("/assets/img/uil_search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+header .menu form button:active {
+  background-size: 70%;
+}
+header .menu form button.close {
+  background-image: url("/assets/img/icon-close.svg");
+  background-size: 50%;
+  color: white;
+}
+header .menu form button.submit {
+  background-image: url("/assets/img/icon-check.svg");
+  background-size: 100%;
+}
+header .menu .btn-menu {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+  background: url("../img/burger.svg") no-repeat;
+}
+header .menu .btn-menu.actived {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icon-close.svg);
+  background-color: #FB2E86;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+header .menu nav {
+  display: none;
+}
+header .menu nav a {
+  text-decoration: none;
+  color: black;
+}
+header .menu nav a.active {
+  color: #FB2E86;
+}
+header .menu nav a:hover {
+  color: #FB2E86;
+}
+header .menu nav.active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: start;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  padding: 60px 0px;
+}
+header .menu nav.active > a {
+  font-size: 1.5rem;
+  padding-left: 30px;
+}
+header .menu nav.active .bar-nav {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+header .menu nav.active .bar-nav a {
+  width: 40px;
+  height: 40px;
+  background-color: #FB2E86;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu nav.active .bar-nav a img {
+  width: 50%;
+}
+header .menu nav.active .setting-nav {
+  position: absolute;
+  top: 10px;
+  left: 28px;
+  display: flex;
+  gap: 20px;
+}
+header .menu nav.active .setting-nav select {
+  background: #ffffff;
+  color: black;
+  border: none;
+  height: 40px;
+  width: 75px;
+}
+@media screen and (min-width: 771px) {
+  header {
+    display: flex;
+  }
+  header .bar {
+    display: block;
+  }
+  header .menu {
+    padding: 15px 0;
+    max-width: 1177px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  header .menu .btn-menu {
+    display: none;
+  }
+  header .menu nav {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  header .menu nav .setting-nav, header .menu nav .bar-nav {
+    display: none;
+  }
+  header .menu form {
+    display: flex;
+  }
+  header .menu form input {
+    position: relative;
+    display: block;
+    width: 300px;
+    right: 0;
+  }
+}
+
+.article-c-stl-1 {
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+}
+.article-c-stl-1 picture {
+  display: block;
+  height: max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+.article-c-stl-1 picture:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #FB2E86;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.05;
+}
+.article-c-stl-1 picture:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #FB2E86;
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.04;
+}
+.article-c-stl-1 picture img {
+  width: 228px;
+  z-index: 2;
+  position: relative;
+}
+.article-c-stl-1 .price {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #00C1FE;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  padding: 13px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 32% 68% 51% 49%/70% 52% 48% 30%;
+  position: absolute;
+  white-space: normal;
+  top: 25px;
+  right: -25px;
+}
+
+/**
+  classe btn rose , use this for make button on any element
+ */
+.btn-rose {
+  background-color: #FB2E86;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 450;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 2px;
+  margin: 15px auto;
+}
+
+main section#home {
+  background-color: #F2F0FF;
+  height: calc(100vh - 45px);
+  background-image: url("../img/img-lampe.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 190px 10px 0 10px;
+  text-align: center;
+}
+main section#home h1 {
+  color: #FB2E86;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+main section#home h2 {
+  font-size: 27px;
+  text-align: left;
+}
+main section#home p {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  color: #979BC2;
+  line-height: 28px;
+  text-align: left;
+}
+main section#home .btn-rose {
+  margin: 50px auto;
+}
+
+/*# sourceMappingURL=home.css.map */

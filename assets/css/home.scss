@@ -1,0 +1,44 @@
+@import "setting";
+@import "styles";
+
+
+main {
+
+  section#home {
+    background-color: $color-gris;
+    height: calc(100vh - 45px);
+    background-image: url("../img/img-lampe.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 190px 10px 0 10px;
+    text-align: center;
+
+    h1{
+      color: $color-rose;
+      font-size: 16px;
+      font-family: Lato  , sans-serif;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    h2{
+      font-size: 27px;
+      text-align: left;
+    }
+
+    p{
+      font-family: Lato , sans-serif;
+      font-size: 12px;
+      color: $color-gris-bleu;
+      line-height: 28px;
+      text-align: left;
+    }
+
+    .btn-rose{
+      margin: 50px auto;
+    }
+
+
+  }
+
+}
