@@ -38,7 +38,7 @@ $formSearch.querySelector('input')
             $btn_submit.classList.remove('submit');
             return (window.innerWidth < 771) && $btn_submit.classList.add('close');
         }
-    })
+    });
 
 
 /**
@@ -49,7 +49,7 @@ let $btnBurger = document.querySelector('header .btn-menu');
 /**
  * bind click to btnBurger
  */
-$btnBurger.addEventListener('click', function (event){
+$btnBurger.addEventListener('click', function (event) {
     let $menu = document.querySelector('header nav');
 
     if ($menu.classList.contains('active')) {
@@ -62,4 +62,33 @@ $btnBurger.addEventListener('click', function (event){
         this.classList.add('actived')
 
     }
+});
+
+//fom desktop
+let $slide_a = document.querySelectorAll('.slider-a article');
+$slide_a.forEach((article) => {
+
+
+    article.addEventListener('click', (event) => {
+        if (window.innerWidth < 800) return false;
+
+        //remove class active for old items
+        $slide_a.forEach((article) => {
+            article.classList.remove('active');
+        })
+        event.currentTarget.classList.add('active')
+    })
 })
+//for mobile
+const $containerSliderA = document.querySelector('.slider-a');
+const $SliderA_itemWidth = $containerSliderA.querySelector('article').offsetWidth;
+$containerSliderA.addEventListener('scroll', () => {
+    //remove class active
+    $containerSliderA.querySelectorAll('article').forEach((article) => {
+        article.classList.remove('active');
+    })
+    //get element active
+    let activeIndex = Math.round($containerSliderA.scrollLeft / $SliderA_itemWidth);
+    //add class active to elment
+    $containerSliderA.querySelectorAll('article')[activeIndex].classList.add('active');
+});
