@@ -341,7 +341,7 @@ title home
 
 /*
 component slide*/
-.slider-a, .slider-c, .slider-b {
+.slider-a, .slider-d, .slider-c, .slider-b {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
@@ -353,10 +353,10 @@ component slide*/
   scroll-snap-type: x mandatory;
   cursor: pointer;
 }
-.slider-a::-webkit-scrollbar, .slider-c::-webkit-scrollbar, .slider-b::-webkit-scrollbar {
+.slider-a::-webkit-scrollbar, .slider-d::-webkit-scrollbar, .slider-c::-webkit-scrollbar, .slider-b::-webkit-scrollbar {
   display: none;
 }
-.slider-a article, .slider-c article, .slider-b article {
+.slider-a article, .slider-d article, .slider-c article, .slider-b article {
   flex: 0 0 auto;
   width: 80%;
   min-width: 256px;
@@ -369,10 +369,10 @@ component slide*/
   text-align: center;
   box-sizing: border-box;
 }
-.slider-a article .btn-green, .slider-c article .btn-green, .slider-b article .btn-green {
+.slider-a article .btn-green, .slider-d article .btn-green, .slider-c article .btn-green, .slider-b article .btn-green {
   display: none;
 }
-.slider-a article picture, .slider-c article picture, .slider-b article picture {
+.slider-a article picture, .slider-d article picture, .slider-c article picture, .slider-b article picture {
   width: 100%;
   height: 237px;
   background-color: #F6F7FB;
@@ -381,52 +381,52 @@ component slide*/
   align-content: center;
   justify-content: center;
 }
-.slider-a article picture img, .slider-c article picture img, .slider-b article picture img {
+.slider-a article picture img, .slider-d article picture img, .slider-c article picture img, .slider-b article picture img {
   width: 80%;
   display: inline-block;
   max-width: 178px;
   transition: width 0.5s ease-out;
 }
-.slider-a article > div, .slider-c article > div, .slider-b article > div {
+.slider-a article > div, .slider-d article > div, .slider-c article > div, .slider-b article > div {
   padding: 10px 0;
 }
-.slider-a article > div h2, .slider-c article > div h2, .slider-b article > div h2 {
+.slider-a article > div h2, .slider-d article > div h2, .slider-c article > div h2, .slider-b article > div h2 {
   font-family: Lato, sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: #FB2E86;
 }
-.slider-a article > div p, .slider-c article > div p, .slider-b article > div p {
+.slider-a article > div p, .slider-d article > div p, .slider-c article > div p, .slider-b article > div p {
   color: #151875;
 }
-.slider-a article > div .choice-color span, .slider-c article > div .choice-color span, .slider-b article > div .choice-color span {
+.slider-a article > div .choice-color span, .slider-d article > div .choice-color span, .slider-c article > div .choice-color span, .slider-b article > div .choice-color span {
   height: 5px;
   width: 20px;
   border-radius: 3px;
   display: inline-block;
 }
-.slider-a article > div .choice-color span:first-child, .slider-c article > div .choice-color span:first-child, .slider-b article > div .choice-color span:first-child {
+.slider-a article > div .choice-color span:first-child, .slider-d article > div .choice-color span:first-child, .slider-c article > div .choice-color span:first-child, .slider-b article > div .choice-color span:first-child {
   background-color: #05E6B7;
 }
-.slider-a article > div .choice-color span:nth-child(2), .slider-c article > div .choice-color span:nth-child(2), .slider-b article > div .choice-color span:nth-child(2) {
+.slider-a article > div .choice-color span:nth-child(2), .slider-d article > div .choice-color span:nth-child(2), .slider-c article > div .choice-color span:nth-child(2), .slider-b article > div .choice-color span:nth-child(2) {
   background-color: #FB2E86;
 }
-.slider-a article > div .choice-color span:last-child, .slider-c article > div .choice-color span:last-child, .slider-b article > div .choice-color span:last-child {
+.slider-a article > div .choice-color span:last-child, .slider-d article > div .choice-color span:last-child, .slider-c article > div .choice-color span:last-child, .slider-b article > div .choice-color span:last-child {
   background-color: #00009D;
 }
-.slider-a article.active, .slider-c article.active, .slider-b article.active {
+.slider-a article.active, .slider-d article.active, .slider-c article.active, .slider-b article.active {
   position: relative;
 }
-.slider-a article.active > div, .slider-c article.active > div, .slider-b article.active > div {
+.slider-a article.active > div, .slider-d article.active > div, .slider-c article.active > div, .slider-b article.active > div {
   background-color: #2F1AC4;
 }
-.slider-a article.active h2, .slider-c article.active h2, .slider-b article.active h2, .slider-a article.active p, .slider-c article.active p, .slider-b article.active p {
+.slider-a article.active h2, .slider-d article.active h2, .slider-c article.active h2, .slider-b article.active h2, .slider-a article.active p, .slider-d article.active p, .slider-c article.active p, .slider-b article.active p {
   color: white;
 }
-.slider-a article.active picture img, .slider-c article.active picture img, .slider-b article.active picture img {
+.slider-a article.active picture img, .slider-d article.active picture img, .slider-c article.active picture img, .slider-b article.active picture img {
   width: 50%;
 }
-.slider-a article.active .btn-green, .slider-c article.active .btn-green, .slider-b article.active .btn-green {
+.slider-a article.active .btn-green, .slider-d article.active .btn-green, .slider-c article.active .btn-green, .slider-b article.active .btn-green {
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -434,12 +434,12 @@ component slide*/
   transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
-  .slider-a article, .slider-c article, .slider-b article {
+  .slider-a article, .slider-d article, .slider-c article, .slider-b article {
     width: auto;
   }
 }
 @media (min-width: 1300px) {
-  .slider-a, .slider-c, .slider-b {
+  .slider-a, .slider-d, .slider-c, .slider-b {
     overflow-x: hidden;
   }
 }
@@ -473,6 +473,29 @@ component slide*/
   .slider-b {
     max-width: 1000px;
     flex-wrap: wrap;
+  }
+}
+
+ul.list-style-a, main section#discount ul, main section#leatest_roducts ul {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  gap: 25px;
+  justify-content: center;
+  list-style-type: none;
+}
+ul.list-style-a li a, main section#discount ul li a, main section#leatest_roducts ul li a {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #1A0B5B;
+}
+ul.list-style-a li a:hover, main section#discount ul li a:hover, main section#leatest_roducts ul li a:hover, ul.list-style-a li a.active, main section#discount ul li a.active, main section#leatest_roducts ul li a.active {
+  color: #FB2E86;
+}
+@media screen and (min-width: 771px) {
+  ul.list-style-a li a, main section#discount ul li a, main section#leatest_roducts ul li a {
+    font-size: 18px;
   }
 }
 
@@ -569,28 +592,6 @@ main section#home .product-promo .btn-rose {
 main section#featured_products {
   padding-top: 20px;
 }
-main section#leatest_roducts ul {
-  display: flex;
-  padding: 0;
-  margin: 0 auto;
-  gap: 25px;
-  justify-content: center;
-  list-style-type: none;
-}
-main section#leatest_roducts ul li a {
-  font-family: Lato, sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  color: #1A0B5B;
-}
-main section#leatest_roducts ul li a:hover, main section#leatest_roducts ul li a.active {
-  color: #FB2E86;
-}
-@media screen and (min-width: 771px) {
-  main section#leatest_roducts ul li a {
-    font-size: 18px;
-  }
-}
 main section#shopex {
   max-width: 1177px;
   margin: 0 auto;
@@ -634,21 +635,21 @@ main section#shopex ul li p {
     max-width: 270px;
   }
 }
-main section#promo {
+main section#promo, main section#discount {
   background-color: #F1F0FF;
 }
-main section#promo figure {
+main section#promo figure, main section#discount figure {
   max-width: 1177px;
   margin: 0 auto;
 }
-main section#promo figure picture {
+main section#promo figure picture, main section#discount figure picture {
   display: block;
   width: 60%;
   margin: 0 auto;
   position: relative;
   text-align: center;
 }
-main section#promo figure picture:before {
+main section#promo figure picture:before, main section#discount figure picture:before {
   content: "";
   height: 70%;
   width: 90%;
@@ -661,15 +662,15 @@ main section#promo figure picture:before {
   z-index: 1;
   border-radius: 32% 68% 51% 49%/70% 52% 48% 30%;
 }
-main section#promo figure picture img {
+main section#promo figure picture img, main section#discount figure picture img {
   position: relative;
   z-index: 2;
   width: 100%;
 }
-main section#promo figure figcaption {
+main section#promo figure figcaption, main section#discount figure figcaption {
   padding: 20px;
 }
-main section#promo figure figcaption ul {
+main section#promo figure figcaption ul, main section#discount figure figcaption ul {
   line-height: 30px;
   margin: 0;
   padding: 0;
@@ -678,71 +679,210 @@ main section#promo figure figcaption ul {
   font-size: 16px;
   list-style: none;
 }
-main section#promo figure figcaption ul li::before {
+main section#promo figure figcaption ul li::before, main section#discount figure figcaption ul li::before {
   content: "• ";
   font-size: 25px;
   color: #FB2E86;
 }
-main section#promo figure figcaption ul li:nth-of-type(2)::before {
+main section#promo figure figcaption ul li:nth-of-type(2)::before, main section#discount figure figcaption ul li:nth-of-type(2)::before {
   color: #2B2BF5;
 }
-main section#promo figure figcaption ul li:nth-of-type(3)::before {
+main section#promo figure figcaption ul li:nth-of-type(3)::before, main section#discount figure figcaption ul li:nth-of-type(3)::before {
   color: #2BF5CC;
 }
-main section#promo figure figcaption > div {
+main section#promo figure figcaption > div, main section#discount figure figcaption > div {
   display: flex;
   align-items: center;
   justify-content: start;
   padding-top: 20px;
   gap: 30px;
 }
-main section#promo figure figcaption > div .btn-rose {
+main section#promo figure figcaption > div .btn-rose, main section#discount figure figcaption > div .btn-rose {
   margin: 0;
 }
-main section#promo figure figcaption > div p {
+main section#promo figure figcaption > div p, main section#discount figure figcaption > div p {
   margin: 0;
   padding: 0;
   line-height: 30px;
   color: #1A0B5B;
 }
-main section#promo figure figcaption > div p span {
+main section#promo figure figcaption > div p span, main section#discount figure figcaption > div p span {
   display: block;
 }
 @media screen and (min-width: 800px) {
-  main section#promo figure {
+  main section#promo figure, main section#discount figure {
     display: flex;
   }
-  main section#promo figure figcaption {
+  main section#promo figure figcaption, main section#discount figure figcaption {
     padding-top: 100px;
   }
 }
-main section#trending_products .slider-c .list ul {
+main section#trending_products .slider-c {
+  display: flex;
+  border-radius: 0;
+  max-height: 330px;
+}
+main section#trending_products .slider-c article:not(.list) {
+  text-align: left;
+  padding: 20px;
+  min-height: auto;
+  min-width: 320px;
+  margin: 0;
+}
+main section#trending_products .slider-c article:not(.list):hover, main section#trending_products .slider-c article:not(.list):active {
+  background-color: #F5F6F8;
+}
+main section#trending_products .slider-c article:not(.list):hover picture, main section#trending_products .slider-c article:not(.list):active picture {
+  background-color: #F5F6F8;
+}
+main section#trending_products .slider-c article:not(.list) > div {
+  padding: 0;
+}
+main section#trending_products .slider-c article:not(.list) > div h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #1A0B5B;
+  font-size: 20px;
+}
+main section#trending_products .slider-c article:not(.list) > div a {
+  color: #FB2E86;
+}
+main section#trending_products .slider-c article:not(.list) picture {
+  margin-top: -5px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: right;
+  background-color: white;
+}
+main section#trending_products .slider-c article:not(.list) picture img {
+  width: 200px;
+  height: max-content;
+}
+main section#trending_products .slider-c article.list {
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
+main section#trending_products .slider-c article.list ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 5px;
 }
-main section#trending_products .slider-c .list ul li {
+main section#trending_products .slider-c article.list ul li {
   display: flex;
   align-items: center;
   text-align: left;
 }
-main section#trending_products .slider-c .list ul li img {
+main section#trending_products .slider-c article.list ul li:hover, main section#trending_products .slider-c article.list ul li:active {
+  background-color: #F5F6F8;
+}
+main section#trending_products .slider-c article.list ul li img {
   flex: 0 0 auto;
-  width: 40%;
+  width: 36%;
   background-color: #F5F6F8;
   margin: 0 auto;
 }
-main section#trending_products .slider-c .list ul li p {
+main section#trending_products .slider-c article.list ul li p {
   width: 60%;
-  padding: 15px;
+  margin: 0;
+  padding: 16px;
   font-weight: 500;
   color: #1A0B5B;
+  font-family: "Josefin Sans", sans-serif;
 }
-main section#trending_products .slider-c .list ul li p span {
+main section#trending_products .slider-c article.list ul li p span {
   display: block;
+}
+main section#discount {
+  background-color: #fff;
+}
+main section#discount figure {
+  align-items: center;
+}
+main section#discount figure picture::before {
+  display: flex;
+  border-radius: 50%;
+  width: 66%;
+  left: 50%;
+  background-color: #FCECF1;
+}
+main section#discount figure figcaption {
+  text-align: left;
+}
+main section#discount figure figcaption h3 {
+  color: #FB2E86;
+}
+main section#discount figure figcaption p {
+  font-family: Lato, sans-serif;
+  color: #B7BACB;
+  font-size: 14px;
+  font-weight: 400;
+}
+main section#discount figure figcaption ul {
+  flex-wrap: wrap;
+}
+main section#discount figure figcaption ul li {
+  box-sizing: border-box;
+  flex: 1 0 40%;
+}
+main section#discount figure figcaption ul li:before {
+  content: "✓";
+  color: #7569B2 !important;
+}
+@media screen and (min-width: 800px) {
+  main section#discount figure {
+    flex-direction: row-reverse;
+  }
+  main section#discount figure picture {
+    padding-top: 40px;
+  }
+}
+main section#topCat .slider-d article {
+  box-shadow: none;
+}
+main section#topCat .slider-d article h2 {
+  color: #1A0B5B;
+}
+main section#topCat .slider-d article picture {
+  border-radius: 50%;
+  margin: 10px 0;
+}
+main section#topCat .slider-d article picture:hover {
+  box-shadow: -4px 5px 5px #9877E7;
+}
+main section#topCat .slider-d article.active > div {
+  background-color: #fff;
+}
+main section#topCat .slider-d article.active p {
+  color: #1A0B5B;
+}
+main section#topCat .slider-d article.active picture {
+  box-shadow: -4px 5px 5px #9877E7;
+}
+main section#topCat .slider-d article.active picture img {
+  width: 50%;
+}
+main section#topCat .slider-d article.active .btn-green {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main section#newslater {
+  text-align: center;
+  background-image: url("../img/bg-newslater.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=home.css.map */

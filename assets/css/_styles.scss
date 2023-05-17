@@ -588,4 +588,43 @@ component slide*/
 
 .slider-c {
   @extend .slider-a ;
+
+  article{
+    //width: 90%;
+    //border: 1px solid #000;
+  }
+}
+
+.slider-d{
+  @extend .slider-a
+}
+
+
+//style list
+
+ul.list-style-a {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  gap: 25px;
+  justify-content: center;
+  list-style-type: none;
+
+  li {
+    a {
+      font-family: Lato, sans-serif;
+      font-size: 12px;
+      text-decoration: none;
+      color: $color-title-home;
+
+      &:hover, &.active {
+        color: $color-rose;
+      }
+
+      @media screen and (min-width: 771px) {
+        font-size: 18px;
+      }
+
+    }
+  }
 }
